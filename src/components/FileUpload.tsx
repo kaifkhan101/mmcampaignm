@@ -56,10 +56,8 @@ const FileUpload: React.FC<FileUploadProps> = ({ onFilesUploaded, isDarkMode }) 
   const determineAdvertiser = (fileName: string, campaign: string): string => {
     const upperFileName = fileName.toUpperCase();
     
-    if (upperFileName.includes('BRANDED') && !upperFileName.includes('NON')) {
+    if (upperFileName.includes('BRANDED')) {
       return 'Branded';
-    } else if (upperFileName.includes('NON COMCAST') || upperFileName.includes('NON_COMCAST')) {
-      return 'NON COMCAST';
     } else if (upperFileName.includes('GZ')) {
       return 'GZ';
     } else if (upperFileName.includes('ES') || campaign.toUpperCase().includes('ES')) {

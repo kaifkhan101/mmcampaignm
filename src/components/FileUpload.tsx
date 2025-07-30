@@ -63,7 +63,7 @@ const FileUpload: React.FC<FileUploadProps> = ({ onFilesUploaded, isDarkMode }) 
     } else if (upperFileName.includes('ES') || campaign.toUpperCase().includes('ES')) {
       return 'ES';
     } else if (upperFileName.includes('COMCAST') || campaign.toUpperCase().includes('COMCAST')) {
-      return 'Comcast';
+      return 'NON-Comcast';
     } else if (campaign === 'RGR' || campaign === 'RAH') {
       return 'RGR';
     } else {

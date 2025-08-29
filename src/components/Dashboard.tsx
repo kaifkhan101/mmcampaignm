@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
-import { Download, FileText, Search, Upload, X, Eye, TrendingUp, DollarSign, Target, Users } from 'lucide-react';
+import { Download, FileText, Search, Upload, X, Eye, TrendingUp, DollarSign, Target, Users, BarChart3 } from 'lucide-react';
 import { ProcessedData, DataRecord, CampaignStats, ETStats, CreativeStats, AdvertiserStats } from '../types';
 
 interface UploadedFile {
